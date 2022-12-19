@@ -1,0 +1,147 @@
+/* ========================= google font-family ========================= */
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300;400;500;600;700;800;900&display=swap');
+
+/* ========================= Common css ========================= */
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    max-width: 1712px;
+    display: block;
+    margin: 0 auto;
+}
+
+.row {
+    width: 100%;
+    text-align: center;
+}
+
+.col-3 {
+    width: 24%;
+    display: inline-block;
+}
+
+/* ========================= product css ========================= */
+
+#product {
+    padding: 50px 0;
+}
+
+.product-item {
+    margin: 0 10px 33px 10px;
+}
+
+.inner-product-item {
+    background: url(./image/Grey-background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding: 24px 0;
+    position: relative;
+    clear: both;
+    overflow: hidden;
+}
+
+.inner-product-item h3 {
+    font-size: 23px;
+    color: #282828;
+    font-weight: 600;
+    padding-top: 34px;
+    margin-bottom: 5px;
+}
+
+.inner-product-item p {
+    font-size: 20px;
+    color: #282828;
+    font-weight: 400;
+}
+
+.product-img img {
+    width: 100%;
+}
+
+.inner-product-item::before {
+    content: "FRARIS BOWL";
+    width: 264px;
+    height: 36px;
+    background: #4d9436;
+    display: block;
+    transform: rotateZ(45deg);
+    position: absolute;
+    top: 38px;
+    font-size: 17px;
+    text-align: center;
+    right: -73px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+@media screen and (max-width:1400px) {
+
+    .inner-product-item h3 {
+        font-size: 20px;
+    }
+
+    .inner-product-item p {
+        font-size: 16px;
+    }
+
+}
+
+@media screen and (max-width:1314px) {
+
+    .inner-product-item h3 {
+        font-size: 18px;
+    }
+
+    .inner-product-item p {
+        font-size: 15px;
+    }
+
+}
+
+@media screen and (max-width:1283px) {
+    .col-3 {
+        width: 49%;
+    }
+
+    .inner-product-item h3 {
+        font-size: 23px;
+    }
+
+    .inner-product-item p {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:632px) {
+    .col-3 {
+        width: 100%;
+    }
+
+    .inner-product-item h3 {
+        font-size: 23px;
+    }
+
+    .inner-product-item p {
+        font-size: 20px;
+    }
+}
